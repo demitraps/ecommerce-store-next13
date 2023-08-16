@@ -31,6 +31,7 @@ className={cn(
   className
 )}
 ref={ref}
+{...props}
 >
   {children}
 </button>
