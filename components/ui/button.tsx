@@ -30,6 +30,7 @@ className={cn(
   `,
   className
 )}
+disabled={disabled}
 ref={ref}
 {...props}
 >
