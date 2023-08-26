@@ -1,34 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Full Stack Next.js 13 E-Commerce Store | Next.js 13 App Router, React, Tailwind, Prisma, MySQL
 
-First, run the development server:
+This is the repository for a fully functioning [E-commerce Store](https://ecommerce-store-next13.vercel.app/).
+
+Find the Github repository for the Admin Dashboard here: https://github.com/demitraps/ecommerce-admin-dashboard-next13
+
+## Features
+
+- Featured products in homepage
+- View different categories
+- Preview card of product
+- Product page with color and size filters
+- Related items
+- Add to cart
+- Stripe checkout
+- Stripe webhooks
+   
+## Tech Stack
+
+**React, Next.JS 13, TypeScript, TailwindCSS**
+
+**Authentication:** Clerk
+**Data validation:** Zod
+**FileUploads:** Cloudinary
+**Components:** Shadcn
+**Database:** MySQL-PlanetScale with Prisma ORM
+
+## Demo
+https://ecommerce-store-next13.vercel.app/
+
+![App Screenshot](./demo/demo.gif)
+
+
+## Checkout
+
+For demo purposes, you can use [Stripe Testing Cards](https://stripe.com/docs/testing).
+
+
+## Screenshots
+
+Homepage:
+
+![App Screenshot](./demo/homepage.png)
+
+Categories:
+
+![App Screenshot](./demo/category.png)
+
+Product preview card:
+
+![App Screenshot](./demo/productpreview.png)
+
+Filter by color/size:
+
+![App Screenshot](./demo/filter.png)
+
+Related items:
+
+![App Screenshot](./demo/related.png)
+
+Shopping cart:
+
+![App Screenshot](./demo/shoppingcart.png)
+
+Stripe:
+
+![App Screenshot](./demo/stripe.png)
+
+## To-Do List
+
+- Multiple quantities per product
+- Email notifications
+- Video uploads
+- Social icons and preview
+- Contact/FAQ pages
+
+
+
+
+### Prerequisites
+
+**Node version 14.x**
+
+### Cloning the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/demitraps/ecommerce-store-next13.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Start the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Available commands
 
-## Learn More
+Running commands with npm `npm run [command]`
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
